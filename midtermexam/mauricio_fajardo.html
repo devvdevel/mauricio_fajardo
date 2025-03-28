@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Users</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            font-size: 36px;
+            margin-bottom: 5px;
+            color: #333;
+        }
+
+        h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: #555;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 20px;
+            padding: 20px;
+            justify-content: center;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .card {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            position: relative;
+            text-align: left;
+            font-size: 12px; /* Font size updated */
+            border: 3px solid #8b8b8b; /* Border size updated */
+        }
+
+        .card img {
+            width: 50px;
+            height: 50px;
+            border-radius: 0; /* Removes rounded corners to make it square */
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            border: 3px solid #aaa7a7; /* Uses 3px to match the box border */
+        }
+
+        .card-content {
+            font-size: 12px; /* Font size updated */
+            color: #333;
+        }
+
+        .card-content p {
+            margin: 5px 0;
+        }  
+        @media (max-width: 900px) {
+            .container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        @media (max-width: 600px) {
+            .container {
+                grid-template-columns: repeat(1, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>CICT Students</h1>
+    <h2>Business Analytics</h2>
+    <div class="container" id="students"></div>
+    <script>
+        function loadXML() {
+            fetch('mauricio_fajardo.xml')
+                .then(response => response.text())
+                .then(data => {
+                    let parser = new DOMParser();
+                    let xmlDoc = parser.parseFromString(data, "text/xml");
+                    let students = xmlDoc.getElementsByTagName("student");
+                    let output = "";
+                    
+                    for (let i = 0; i < students.length; i++) {
+                        let picture = students[i].getElementsByTagName("picture")[0]?.textContent || "https://via.placeholder.com/50";
+                        let name = students[i].getElementsByTagName("name")[0]?.textContent || "Unknown";
+                        let course = students[i].getElementsByTagName("course")[0]?.textContent || "N/A";
+                        let yearLevelSection = students[i].getElementsByTagName("yearLevelSection")[0]?.textContent || "N/A";
+                        let adviser = students[i].getElementsByTagName("adviser")[0]?.textContent || "N/A";
+                        let schoolYear = students[i].getElementsByTagName("schoolYear")[0]?.textContent || "N/A";
+                        
+                        output += `
+                            <div class="card">
+                                <img src="${picture}" alt="Student Picture">
+                                <div class="card-content">
+                                    <p><strong>Name:</strong> ${name}</p>
+                                    <p><strong>Course:</strong> ${course}</p>
+                                    <p><strong>Year Level / Section:</strong> ${yearLevelSection}</p>
+                                    <p><strong>Adviser:</strong> ${adviser}</p>
+                                    <p><strong>School Year:</strong> ${schoolYear}</p>
+                                </div>
+                            </div>`;
+                    }
+                    document.getElementById("students").innerHTML = output;
+                })
+                .catch(error => console.error("Error loading XML: ", error));
+        }
+        
+        window.onload = loadXML;
+    </script>
+</body>
+</html>

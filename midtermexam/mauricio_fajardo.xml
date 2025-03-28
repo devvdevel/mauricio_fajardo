@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<students>
+    <student>
+        <picture>https://randomuser.me/api/portraits/men/1.jpg</picture>
+        <name>Juan Dela Cruz</name>
+        <course>BSIT</course>
+        <yearLevelSection>3BG2</yearLevelSection>
+        <adviser>Mr. Santos</adviser>
+        <schoolYear>2024-2025</schoolYear>
+    </student>
+    <student>
+        <picture>https://randomuser.me/api/portraits/women/1.jpg</picture>
+        <name>Maria Santos</name>
+        <course>BSCS</course>
+        <yearLevelSection>2CS1</yearLevelSection>
+        <adviser>Ms. Reyes</adviser>
+        <schoolYear>2024-2025</schoolYear>
+    </student>
+    <student>
+        <picture>https://randomuser.me/api/portraits/men/2.jpg</picture>
+        <name>Carlos Garcia</name>
+        <course>BSIT</course>
+        <yearLevelSection>4IT2</yearLevelSection>
+        <adviser>Mr. Dela Rosa</adviser>
+        <schoolYear>2024-2025</schoolYear>
+    </student>
+    <student>
+        <picture>https://randomuser.me/api/portraits/women/2.jpg</picture>
+        <name>Anna Mendoza</name>
+        <course>BSIS</course>
+        <yearLevelSection>1IS1</yearLevelSection>
+        <adviser>Ms. Villanueva</adviser>
+        <schoolYear>2024-2025</schoolYear>
+    </student>
+    <student>
+        <picture>https://randomuser.me/api/portraits/men/3.jpg</picture>
+        <name>Michael Tan</name>
+        <course>BSIT</course>
+        <yearLevelSection>3BG1</yearLevelSection>
+        <adviser>Mr. Bautista</adviser>
+        <schoolYear>2024-2025</schoolYear>
+    </student>
+    <student>
+        <picture>https://randomuser.me/api/portraits/women/3.jpg</picture>
+        <name>Lisa Rodriguez</name>
+        <course>BSCS</course>
+        <yearLevelSection>2CS3</yearLevelSection>
+        <adviser>Ms. Lim</adviser>
+        <schoolYear>2024-2025</schoolYear>
+    </student>
+    <student>
+        <picture>https://randomuser.me/api/portraits/men/4.jpg</picture>
+        <name>Daniel Lopez</name>
+        <course>BSIS</course>
+        <yearLevelSection>4IS2</yearLevelSection>
+        <adviser>Mr. Hernandez</adviser>
+        <schoolYear>2024-2025</schoolYear>
+    </student>
+    <student>
+        <picture>https://randomuser.me/api/portraits/women/4.jpg</picture>
+        <name>Katrina Ferrer</name>
+        <course>BSIT</course>
+        <yearLevelSection>3BG3</yearLevelSection>
+        <adviser>Ms. Garcia</adviser>
+        <schoolYear>2024-2025</schoolYear>
+    </student>
+    <student>
+        <picture>https://randomuser.me/api/portraits/men/5.jpg</picture>
+        <name>Robert Martinez</name>
+        <course>BSCS</course>
+        <yearLevelSection>1CS2</yearLevelSection>
+        <adviser>Mr. Chua</adviser>
+        <schoolYear>2024-2025</schoolYear>
+    </student>
+    <student>
+        <picture>https://randomuser.me/api/portraits/women/5.jpg</picture>
+        <name>Sophia Reyes</name>
+        <course>BSIS</course>
+        <yearLevelSection>2IS3</yearLevelSection>
+        <adviser>Ms. Tan</adviser>
+        <schoolYear>2024-2025</schoolYear>
+    </student>
+    <student>
+        <picture>https://randomuser.me/api/portraits/men/6.jpg</picture>
+        <name>Mark Villanueva</name>
+        <course>BSIT</course>
+        <yearLevelSection>2IT4</yearLevelSection>
+        <adviser>Mr. Gomez</adviser>
+        <schoolYear>2024-2025</schoolYear>
+    </student>
+    <student>
+        <picture>https://randomuser.me/api/portraits/women/6.jpg</picture>
+        <name>Angela Cruz</name>
+        <course>BSCS</course>
+        <yearLevelSection>3CS5</yearLevelSection>
+        <adviser>Ms. Fernandez</adviser>
+        <schoolYear>2024-2025</schoolYear>
+    </student>
+</students>
